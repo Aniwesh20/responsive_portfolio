@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/661a1d828a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+       <div class="container">
+        <nav>
+            <img src="images/logonew.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openemenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1> Hi, I am Aniwesh.</h1>
+            <h1><span class="auto-input"></span></h1>
+        </div>
+       </div>
+    </div>
+
+    <!-- --------------------------------------------------------------ABOUT------------------------------------------------------------------------------------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hi, My name is <em>Aniwesh Kumar</em> and I am a Student at VIT,
+                    Bhopal. I am passionate about coding and development and I am
+                    always eager to learn new technologies and techniques. Through
+                    this portfolio, I showcase some of my past and current projects as
+                    well as my skills and experiences. Please feel free to contact me
+                    for any opportunities.</p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('edcation')">Education</p>
+                    <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    <p class="tab-links" onclick="opentab('hobby')">Hobbies & Languages</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li>
+                            <span>2020-current</span><br />B.tech CSE Core at VIT, Bhopal<br/><b>Grade:</b> 8.05CGPA
+                          </li>
+                          <li>
+                            <span>2018-2020</span><br />Secondary School at Bradford International
+                            School, Patna<br/><b>12th Grade:</b> 71%
+                          </li>
+                          <li>
+                            <span>Till 2018</span><br />High School at The Tribhuvan School
+                            School, Patna<br/><b>10th Grade:</b> 84.60%
+                          </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certification">
+                    <ul>
+                        <li><span>Data Analytics</span><br>Fundamentals of Data Analytics, Futureskills prime.</li>
+                        <li><span>Data Science</span><br>>Microlearning Course in Data Science, Board Infinity.</li>
+                        <li><span>Web development</span><br>IBM full Stack web development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobby">
+                    <ul>
+                        <li><span>Hobbies</span><br/>Reading Books<br/>Web Exploring</li>
+                        <!-- <li><span>Hobbies</span><br>Developing full Stack websites</li> -->
+                        <li><span>Languages Known</span><br />English<br/>Hindi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
+    <!-- ---------------------------------------------------------SERVICES---------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Web Design</h2>
+                    <p>
+                        <h5>I Work on React.js framework called <b>Next.js</b>. I have Projects listed below:<br/></h5>
+                        <li><b>Food Ordering App</b> using React.js(Next.js) which is currently under development.<br/></li>
+                        <li><b>Discussion Forum</b> Made using Next.js for discussing queries with others by posting them in form of comments.<br/></li>
+                        <li><b>Weather App</b> using Next.js it shows weather of any place in the world with sunrise, sunset, precipitation, etc.</li>
+          
+                      </p>
+                      <a href= "https://github.com/Aniwesh20" target = "_blank"class="btn btn2">Learn more</a>
+    
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Technical Knowledge</h2>
+                    <p>
+                        <li>Java</li>
+                        <li>Next.js</li>
+                        <li>React.js</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </p>
+                     <!-- <a href="#">Learn more</a> -->
+                </div>
+
+                <div>
+                    <i class= "fa-solid fa-crop"></i>
+                    <h2>Problem Solving</h2>
+                    <p>
+                        <h3>Leetcode:<br/></h3>
+                        Questions Solved: 156 and counting<br/>
+                        <h3>HackerRank:<br/></h3>
+                        <li>3 Star Problem Solving<br/></li>
+                        <li>3 Star Java<br/></li>
+                        <li>30 Days Of Code<br/></li>
+                      </p>
+                      <a href="https://leetcode.com/aniweshkumar74/" target="_blank" class="btn btn2"
+                      >Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------------------------------PORTFOLIO----------------------------------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work1.png" alt="project Image"/h>
+                <div class="layer">
+                    <h3>Food Ordering App (Under Development)</h3>
+                <p>Full stack web development for ordering food from our cafe with Integrated Payment method(PayPal). User can order food and can see the status of the food that is it being ready or out for delivery or not.</p>
+                
+                <a href=" " target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="Project Image"/>
+                <div class="layer">
+                    <h3>Expense-Tracker-React</h3>
+                    <p>
+                     A fully designed React app which lets you calculate and manage your day to day expenses in a easy manner.
+                    </p>
+                    <a href="https://expense-tracker-react-rosy.vercel.app/" target="_blank"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>chat App</h3>
+                    <p>
+                       I developed a react js based chat application which allows people to make thier account by loging in with their email id and chat with new people it also allows media sharing.
+                    </p>
+                    <a
+                      href=""
+                      target="_blank"
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                </div>
+            </div>
+        </div>
+        <a href= "https://github.com/Aniwesh20" target="_blank" class="btn"
+        >See more</a
+    </div>
+</div>
+
+<!-- ----------------------------------------------------CONTACT ------------------------------------------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i> aniweshkumar74@gmail.com</p>
+            <p><i class="fa-sharp fa-solid fa-square-phone"></i> 8873045555</p>
+            <div class="social-icons">
+                <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+                <a
+                href="https://www.linkedin.com/in/aniwesh-singh-7854071b9"
+                target="_blank"
+                ><!--<i class="fa-brands fa-linkedin"></i
+              >-->
+                <img src="Images/l1.svg" alt="" class="image"
+              /></a>
+               
+            
+                <a href="https://github.com/Aniwesh20" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <!-- <a href="https://www.instagram.com/aryan.21.02/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a> -->
+                <a href="https://leetcode.com/aniweshkumar74/" target="_blank"
+                  ><img src="Images/leet3.png" alt="" class="image"
+                /></a>
+                <a href="https://www.hackerrank.com/aniwesh_kumar201" target="_blank"
+                  ><img src="Images/h1.svg" alt="" class="image"
+                /></a>
+              </div>
+              <a href="Aniwesh.pdf" download class="btn btn2"
+                >Download Resume</a
+              >
+              <a
+                href="https://linktr.ee/aniwesh20"
+                target="_blank"
+                class="btn btn3"
+                >Other Links</a
+              >
+            </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Aniwesh Kumar.</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openemenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5uCrq7ayfPHea4A2y5GkI6mNu-wKyESpzPO9-gIbRZnIvTXJRpDqwDw7qgk5LEVte7Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    var typed=new Typed(".auto-input",{
+        strings: ["an aspiring","Web Developer","Java Developer","Student"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true
+    })
+</script>
+
+<script>
+
+let docTitle = document.title;
+        window.addEventListener("blur", () => {
+            document.title = "Thank You for Viewing😊";
+        })
+        window.addEventListener("focus", () => {
+            document.title = docTitle;
+        })
+
+</script>
+
+
+
+</body>
+</html>
